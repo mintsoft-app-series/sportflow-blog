@@ -1,6 +1,7 @@
 ---
 title: '농구 기본 규칙 - 초보자가 알아야 할 핵심 규칙 10가지'
 description: '농구를 처음 접하는 분들을 위한 핵심 규칙 정리. 경기 시간, 득점, 반칙, 바이올레이션까지 한눈에 알아봅니다.'
+category: '스포츠 규칙'
 pubDate: '2026-03-20'
 heroImage: 'https://cdn.pixabay.com/photo/2020/04/15/15/39/basketball-5048164_1280.jpg'
 ---

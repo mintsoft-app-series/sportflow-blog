@@ -1,6 +1,7 @@
 ---
 title: '마라톤의 역사와 기원 - 2,500년 전 그리스에서 시작된 달리기'
 description: '마라톤은 기원전 490년 그리스-페르시아 전쟁에서 유래했습니다. 42.195km가 된 이유와 근대 올림픽에서의 발전을 알아봅니다.'
+category: '스포츠 역사'
 pubDate: '2026-03-24'
 heroImage: 'https://cdn.pixabay.com/photo/2016/11/18/15/44/audience-1835431_1280.jpg'
 ---

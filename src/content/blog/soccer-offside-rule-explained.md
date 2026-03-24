@@ -1,6 +1,7 @@
 ---
 title: '축구 오프사이드 규칙 완벽 정리 - 초보자도 이해하는 설명'
 description: '축구에서 가장 헷갈리는 규칙인 오프사이드를 그림 없이도 이해할 수 있도록 쉽게 설명합니다.'
+category: '스포츠 규칙'
 pubDate: '2026-03-23'
 heroImage: 'https://cdn.pixabay.com/photo/2016/05/16/21/07/football-1396740_1280.jpg'
 ---

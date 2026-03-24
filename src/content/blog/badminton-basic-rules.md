@@ -1,6 +1,7 @@
 ---
 title: '배드민턴 기본 규칙 총정리 - 점수, 서브, 코트까지'
 description: '배드민턴을 처음 시작하는 분들을 위한 기본 규칙 가이드. 점수 체계, 서브 규칙, 코트 규격을 알기 쉽게 정리했습니다.'
+category: '스포츠 규칙'
 pubDate: '2026-03-21'
 heroImage: 'https://cdn.pixabay.com/photo/2016/09/18/22/42/badminton-1678577_1280.jpg'
 ---
