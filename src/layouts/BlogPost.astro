@@ -95,24 +95,94 @@ const { title, description, pubDate, updatedDate, heroImage, category } = Astro.
 		margin: 0;
 	}
 	.prose {
-		font-size: 1rem;
-		line-height: 1.8;
+		font-size: 1.05rem;
+		line-height: 1.85;
+		color: rgb(var(--gray-dark));
 	}
 	.prose :global(h2) {
-		font-size: 1.4rem;
+		font-size: 1.45rem;
 		margin-top: 2.5rem;
-		padding-bottom: 0.4rem;
+		margin-bottom: 0.75rem;
+		padding-bottom: 0.5rem;
 		border-bottom: 1px solid rgb(var(--gray-light));
+		color: rgb(var(--black));
 	}
 	.prose :global(h3) {
-		font-size: 1.15rem;
-		margin-top: 1.75rem;
+		font-size: 1.2rem;
+		margin-top: 2rem;
+		margin-bottom: 0.5rem;
+		color: rgb(var(--black));
+	}
+	.prose :global(p) {
+		margin-bottom: 1.25rem;
 	}
 	.prose :global(ul), .prose :global(ol) {
 		padding-left: 1.5rem;
+		margin-bottom: 1.25rem;
 	}
 	.prose :global(li) {
 		margin-bottom: 0.4rem;
+	}
+	.prose :global(img) {
+		width: 100%;
+		border-radius: 12px;
+		margin: 1.5rem 0;
+		box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+	}
+	.prose :global(table) {
+		width: 100%;
+		border-collapse: collapse;
+		margin: 1.5rem 0;
+		font-size: 0.92rem;
+	}
+	.prose :global(th) {
+		background: #f9fafb;
+		font-weight: 600;
+		text-align: left;
+		padding: 0.65rem 1rem;
+		border: 1px solid #e5e7eb;
+	}
+	.prose :global(td) {
+		padding: 0.6rem 1rem;
+		border: 1px solid #e5e7eb;
+	}
+	.prose :global(tr:hover) {
+		background: #fafafa;
+	}
+	.prose :global(blockquote) {
+		border-left: 3px solid var(--brand);
+		margin: 1.5rem 0;
+		padding: 0.75rem 0 0.75rem 1.25rem;
+		color: rgb(var(--gray));
+		font-style: italic;
+		background: #f9fafb;
+		border-radius: 0 8px 8px 0;
+	}
+	.prose :global(blockquote p) {
+		margin-bottom: 0;
+	}
+	.prose :global(strong) {
+		font-weight: 650;
+		color: rgb(var(--black));
+	}
+	.prose :global(a) {
+		color: var(--brand);
+		text-decoration: underline;
+		text-underline-offset: 2px;
+	}
+	.prose :global(a:hover) {
+		color: var(--brand-light);
+	}
+	.prose :global(code) {
+		background: rgb(var(--gray-light));
+		padding: 0.15rem 0.4rem;
+		border-radius: 4px;
+		font-size: 0.88em;
+	}
+	.prose :global(hr) {
+		border: none;
+		border-top: 1px solid rgb(var(--gray-light));
+		margin: 2rem 0;
 	}
 	.article-footer {
 		margin-top: 3rem;
