@@ -3,7 +3,7 @@ title: '올림픽의 역사 - 고대 그리스부터 현대까지'
 description: '기원전 776년 고대 올림피아에서 시작된 올림픽 경기가 어떻게 현대의 세계 최대 스포츠 축제로 발전했는지 알아봅니다.'
 category: '스포츠 역사'
 pubDate: '2026-03-22'
-heroImage: 'https://cdn.pixabay.com/photo/2016/09/05/21/37/athletics-1647666_1280.jpg'
+heroImage: 'https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?w=1200&h=600&fit=crop'
 ---
 
 ## 고대 올림픽 (기원전 776년 ~ 서기 393년)
