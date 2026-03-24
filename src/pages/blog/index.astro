@@ -4,11 +4,12 @@ import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import Header from '../../components/Header.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
-import { SITE_TITLE } from '../../consts';
+import { SITE_TITLE, CATEGORY_SLUGS } from '../../consts';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+const categories = [...new Set(posts.map(p => p.data.category).filter(Boolean))];
 ---
 
 <!doctype html>
@@ -22,6 +23,12 @@ const posts = (await getCollection('blog')).sort(
 			<div class="page-header">
 				<h1>블로그</h1>
 				<p>스포츠의 규칙, 역사, 국내 대회 소식과 뉴스</p>
+			</div>
+			<div class="categories">
+				<a href="/blog" class="cat-tag active">전체</a>
+				{categories.map(cat => (
+					<a href={`/category/${CATEGORY_SLUGS[cat!] || cat}`} class="cat-tag">{cat}</a>
+				))}
 			</div>
 			<div class="posts-grid">
 				{posts.map((post) => (
@@ -48,7 +55,30 @@ const posts = (await getCollection('blog')).sort(
 		padding: 2rem 1.5rem;
 	}
 	.page-header {
+		margin-bottom: 1rem;
+	}
+	.categories {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
 		margin-bottom: 2rem;
+	}
+	.cat-tag {
+		display: inline-block;
+		padding: 0.35rem 1rem;
+		border-radius: 20px;
+		font-size: 0.85rem;
+		font-weight: 500;
+		text-decoration: none;
+		color: rgb(var(--gray-dark));
+		background: white;
+		border: 1px solid #e5e7eb;
+		transition: all 0.15s;
+	}
+	.cat-tag:hover, .cat-tag.active {
+		background: var(--brand);
+		color: white;
+		border-color: var(--brand);
 	}
 	.page-header h1 {
 		font-size: 1.8rem;
