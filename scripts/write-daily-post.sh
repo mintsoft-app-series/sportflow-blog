@@ -4,17 +4,19 @@ set -euo pipefail
 # SportsFlow 블로그 - 매일 아침 자동 글 작성 스크립트
 # 크론: 0 7 * * 1-5 (월~금 07:00 KST)
 
+export PATH="$HOME/.local/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 BLOG_DIR="/home/mint/workspace/sports/blog"
 LOG_FILE="$BLOG_DIR/scripts/post.log"
+CLAUDE="/home/mint/.local/bin/claude"
 
 cd "$BLOG_DIR"
 
 echo "$(date '+%Y-%m-%d %H:%M:%S') - 블로그 글 작성 시작" >> "$LOG_FILE"
 
-claude -p "
+$CLAUDE -p "
 당신은 SportsFlow 스포츠 블로그 작성자입니다.
 
 /home/mint/workspace/sports/blog/src/content/blog/ 디렉토리에 오늘 날짜의 새 블로그 글을 작성하세요.
@@ -31,6 +33,6 @@ claude -p "
 9. 작성 후 git add, commit, push 실행
 
 실행하세요.
-" --allowedTools "Bash,Read,Write,Glob,Grep" 2>> "$LOG_FILE"
+" --allowedTools "Bash,Read,Write,Glob,Grep" >> "$LOG_FILE" 2>&1
 
 echo "$(date '+%Y-%m-%d %H:%M:%S') - 완료" >> "$LOG_FILE"
