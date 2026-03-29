@@ -1,0 +1,115 @@
+2026-03-25 07:00:01 - 블로그 글 작성 시작
+/home/mint/workspace/sports/blog/scripts/write-daily-post.sh: 줄 17: claude: 명령어를 찾을 수 없음
+2026-03-25 10:32:30 - 블로그 글 작성 시작
+완료했습니다.
+
+**작성된 글 요약:**
+- **파일**: `swimming-freestyle-guide-for-beginners.md`
+- **제목**: 수영 초보자를 위한 자유형 완벽 가이드 - 호흡부터 킥까지
+- **카테고리**: 스포츠 팁/가이드
+- **분량**: 5,051자 (기준 1,500자 초과)
+- **이미지**: Unsplash 이미지 4개 (모두 200 OK 확인)
+- **내용**: 물 적응 → 킥 → 스트로크 → 호흡 → 드릴 연습 5단계 구성, 장비 가이드 및 FAQ 포함
+- **배포**: `main` 브랜치에 push 완료
+2026-03-25 10:35:09 - 완료
+2026-03-26 07:00:03 - 블로그 글 작성 시작
+완료되었습니다.
+
+**작성된 글 요약:**
+- **파일**: `golf-basic-rules-and-etiquette.md`
+- **제목**: 골프 기본 규칙과 에티켓 완벽 가이드 - 라운드 전 꼭 알아야 할 것들
+- **카테고리**: 스포츠 규칙
+- **내용**: 스코어 용어, 2026년 최신 R&A/USGA 규칙(티잉 구역, 벙커, 퍼팅 그린, 페널티 구역, OB/분실구, 드롭), 경기 형식, 에티켓, 핸디캡 시스템, 드레스 코드, 실전 팁
+- **이미지**: Unsplash 4개 (모두 200 OK 확인)
+- **배포**: git push 완료 (`7719b86`)
+2026-03-26 07:03:18 - 블로그 글 작성 완료
+2026-03-26 07:03:18 - 인스타그램 콘텐츠 생성 시작
+모든 작업이 완료되었습니다.
+
+**생성된 파일 목록:**
+- `posts/2026-03-26-golf-basic-rules/slide-01.html` ~ `slide-10.html` (슬라이드 10장)
+- `posts/2026-03-26-golf-basic-rules/images/01.png` ~ `10.png` (캡처 이미지 10장)
+- `posts/2026-03-26-golf-basic-rules/caption.txt` (인스타그램 캡션)
+
+**슬라이드 구성:**
+| 슬라이드 | 내용 |
+|---|---|
+| 01 | 제목 - "라운드 전, 이것만은 꼭 알고 가세요!" |
+| 02 | 핵심 요약 - 기본 구조, 최신 규칙, 에티켓, 실전 팁 |
+| 03 | 골프 경기 기본 구조 (18홀, 파72, 스코어 용어) |
+| 04 | 티잉 구역 & 페어웨이 규칙 |
+| 05 | 벙커 & 퍼팅 그린 규칙 |
+| 06 | 페널티 구역 & OB 처리 |
+| 07 | 골프 에티켓 필수 매너 |
+| 08 | 초보자 실전 팁 (드레스 코드, 준비물, 핸디캡) |
+| 09 | 핵심 내용 한눈에 보기 |
+| 10 | CTA - SportsFlow 홍보 |
+2026-03-26 07:07:24 - 인스타그램 콘텐츠 생성 완료
+2026-03-26 07:07:24 - 인스타그램 업로드 시작
+이미지 10장, 캡션 365자
+node:internal/modules/run_main:123
+    triggerUncaughtException(
+    ^
+
+browserType.launch: Target page, context or browser has been closed
+Browser logs:
+
+╔════════════════════════════════════════════════════════════════════════════════════════════════╗
+║ Looks like you launched a headed browser without having a XServer running.                     ║
+║ Set either 'headless: true' or use 'xvfb-run <your-playwright-app>' before running Playwright. ║
+║                                                                                                ║
+║ <3 Playwright Team                                                                             ║
+╚════════════════════════════════════════════════════════════════════════════════════════════════╝
+Call log:
+  - <launching> /home/mint/.cache/ms-playwright/chromium-1208/chrome-linux64/chrome --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --user-data-dir=/tmp/playwright_chromiumdev_profile-NuPgyE --remote-debugging-pipe --no-startup-window
+  - <launched> pid=1684025
+  - [pid=1684025][err] [1684025:1684025:0326/070729.537554:ERROR:ui/ozone/platform/x11/ozone_platform_x11.cc:256] Missing X server or $DISPLAY
+  - [pid=1684025][err] [1684025:1684025:0326/070729.543930:ERROR:ui/aura/env.cc:246] The platform failed to initialize.  Exiting.
+  - [pid=1684025] <gracefully close start>
+  - [pid=1684025] <kill>
+  - [pid=1684025] <will force kill>
+  - [pid=1684025] <process did exit: exitCode=1, signal=null>
+  - [pid=1684025] starting temporary directories cleanup
+  - [pid=1684025] finished temporary directories cleanup
+  - [pid=1684025] <gracefully close end>
+
+    at /home/mint/workspace/sports/marketing/instagram/upload.mjs:48:32
+
+Node.js v20.20.0
+2026-03-27 07:00:01 - 블로그 글 작성 시작
+완료되었습니다.
+
+**작성된 글 요약:**
+- **파일**: `cycling-beginners-guide-equipment-safety.md`
+- **제목**: 자전거 라이딩 초보자 완벽 가이드 - 장비 선택부터 안전 수칙까지
+- **카테고리**: 스포츠 팁/가이드
+- **내용**: 자전거 종류별 특징, 사이즈 맞추기, 필수 장비 체크리스트, 기본 기술(페달링/변속/브레이크), 안전 수칙 10가지, 추천 코스 4곳, 8주 훈련 계획, 정비 기본
+- **이미지**: Unsplash 이미지 4개 (모두 200 응답 확인)
+- **커밋 & 푸시**: 완료 (`216fbba`)
+2026-03-27 07:02:57 - 블로그 글 작성 완료
+2026-03-27 07:02:57 - 인스타그램 콘텐츠 생성 시작
+모든 작업 완료되었습니다.
+
+**결과 요약:**
+- **블로그 글**: `cycling-beginners-guide-equipment-safety.md` (자전거 라이딩 초보자 완벽 가이드)
+- **슬라이드 10장**: `posts/2026-03-27-cycling-beginners-guide/slide-01~10.html`
+  1. 커버 - 제목 + 호기심 유발
+  2. 핵심 요약 4가지
+  3. 자전거 종류별 특징 (로드/하이브리드/MTB/미니벨로)
+  4. 사이즈 맞추기 + 안장 높이 팁
+  5. 필수 장비 체크리스트 (안전/편의)
+  6. 라이딩 기본 기술 (페달링/변속/브레이크)
+  7. 안전 수칙 핵심 5가지
+  8. 초보자 추천 코스 4곳
+  9. 핵심 정리
+  10. CTA (SportsFlow 링크)
+- **캡처 이미지**: `images/01~10.png` (10장 생성 완료)
+- **캡션**: `caption.txt` 생성 완료
+2026-03-27 07:06:24 - 인스타그램 콘텐츠 생성 완료
+2026-03-27 07:06:24 - Remotion 렌더링 + Buffer 업로드 시작
+[2026-03-27 07:06:24] 포스트 발견: 2026-03-27-badminton-beginner
+[2026-03-27 07:06:24] Remotion 렌더링 시작 (캐러셀 + 릴스)...
+[2026-03-27 07:08:08] 렌더링 완료
+[2026-03-27 07:08:08] Buffer 업로드 시작...
+[2026-03-27 07:08:28] 업로드 완료: 2026-03-27-badminton-beginner
+2026-03-27 07:08:28 - 렌더링 + 업로드 완료: 2026-03-27-badminton-beginner
